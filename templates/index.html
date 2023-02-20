@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breasking News</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='main.css') }}">
+</head>
+<body>
+
+    <div id="news-container">
+        {% for item in news %}
+            <div class="news-item">
+                <h3>{{item.title}}</h3>
+                <img src="{{item.urlToImage}}" alt="" style="width: 200px; height:auto;">
+                <p>
+                    {{item.description}}
+                </p>
+                <h3>{{item.publishedAt}}</h3>
+            </div>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>
