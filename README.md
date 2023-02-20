@@ -12,7 +12,7 @@ You need the following to run the app:
 
 - create a new virtual environment (optional) using the cmd: `virtualenv <preferred name for virtual environrment>`
 
-- Activate the virtual environment using the command: `.\env\scripts\activate` or for linux `source ./env/bin/activate`
+- Activate the virtual environment using the command: `.\<virtual env name>\scripts\activate` or for linux `source ./<virtual env name>/bin/activate`
 
 - Once activated run `pip install -r requirements.txt` to install project dependencies
 
